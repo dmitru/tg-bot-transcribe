@@ -6,7 +6,7 @@ const client = new OpenAi({ apiKey: config.openai.key });
 
 async function cleanUpTranscription(transcript: string) {
   const result = await client.chat.completions.create({
-    model: "gpt-4-1106-preview",
+    model: "gpt-4",
     temperature: 0,
     messages: [
       {

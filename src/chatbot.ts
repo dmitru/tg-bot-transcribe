@@ -1,4 +1,4 @@
-import { bot } from "./chatbots/echobot";
+import { bot } from "./chatbots/transcribe-bot";
 
 bot.launch();
 process.once("SIGINT", () => bot.stop("SIGINT"));
